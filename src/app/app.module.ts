@@ -9,6 +9,8 @@ import { HomeBannerComponent } from './Components/Pages/home/home-banner/home-ba
 import { LayoutComponent } from './Components/layout/layout.component';
 import { NavbarComponent } from './Components/layout/navbar/navbar.component';
 import { FooterComponent } from './Components/layout/footer/footer.component';
+import { HomeFeatureCardComponent } from './Components/Pages/home/home-feature-card/home-feature-card.component';
+import { HomeFeaturesComponent } from './Components/Pages/home/home-features/home-features.component';
 
 
 @NgModule({
@@ -16,9 +18,11 @@ import { FooterComponent } from './Components/layout/footer/footer.component';
     AppComponent,
     HomeComponent,
     HomeBannerComponent,
+    HomeFeatureCardComponent,
+    HomeFeaturesComponent,
     LayoutComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
