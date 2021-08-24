@@ -15,8 +15,6 @@
   #mainNav .navbar-brand {
     color: #ffffff;
     font-family: "Josephin Sans", sans-serif;
-    font-weight: 700;
-    /* letter-spacing: 0.0625em; */
     text-transform: uppercase;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
@@ -41,21 +39,10 @@
       font-size: 1.5em;
       transition: font-size 0.3s ease-in-out;
     }
-    #mainNav .navbar-brand img {
-      height: 2rem;
-      transition: height 0.3s ease-in-out;
-    }
     #mainNav.navbar-shrink {
       padding-top: 1rem;
       padding-bottom: 1rem;
       background-color: #212529;
-    }
-    #mainNav.navbar-shrink .navbar-brand {
-      font-size: 1.25em;
-    }
-    #mainNav.navbar-shrink .navbar-brand svg,
-  #mainNav.navbar-shrink .navbar-brand img {
-      height: 1.5rem;
     }
     #mainNav .navbar-nav .nav-item {
       margin-right: 1rem;
