@@ -1,13 +1,13 @@
 <div class="card mb-3">
   <a [routerLink]="link" title="{{title}}">
-    <h3 class="card-header">{{title}}</h3>
+    <h3 class="card- text-center text-uppercase">{{title}}</h3>
     <div class="card-body">
-      <img [src]="img" class="w-25 img-card img-fluid mx-auto d-block" alt="{{title}}" title="{{title}}" />
+      <img [src]="img" class=" img-card img-fluid mx-auto d-block" alt="{{title}}" title="{{title}}" />
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item text-center">
         <p>{{description}}</p>
-        <a [routerLink]="link" class="btn btn-green" title="{{title}}">En savoir plus</a>
+        <a [routerLink]="link" class="btn btn-primary" title="{{title}}">En savoir plus</a>
       </li>
     </ul>
   </a>

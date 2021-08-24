@@ -1,0 +1,17 @@
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(145, 76, 16);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(145, 76, 16);
+    border-color: rgb(145, 76, 16);
+  }
+
+/* .img-card{
+
+} */

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeFeaturesComponent implements OnInit {
 
   features: any = [];
-  
+
   constructor() { }
 
   ngOnInit(): void {
@@ -16,20 +16,20 @@ export class HomeFeaturesComponent implements OnInit {
       {
         title: 'E-Shop',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius a ipsum ut efficitur.',
-        img: '#',
-        link:'#'
+        img: 'assets/img/Coffret-1.jpg',
+        link:'/shop'
       },
       {
         title: 'Epicerie',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius a ipsum ut efficitur.',
-        img: '#',
-        link:'#'
+        img: 'assets/img/Coffret-1.jpg',
+        link:'/About'
       },
       {
-        title: 'Contact',
+        title: 'Blog',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius a ipsum ut efficitur.',
-        img: '#',
-        link:'#'
+        img: 'assets/img/Coffret-1.jpg',
+        link:'/Blog'
       }
 
 
