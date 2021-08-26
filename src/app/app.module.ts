@@ -12,6 +12,8 @@ import { FooterComponent } from './Components/layout/footer/footer.component';
 import { HomeFeatureCardComponent } from './Components/Pages/home/home-feature-card/home-feature-card.component';
 import { HomeFeaturesComponent } from './Components/Pages/home/home-features/home-features.component';
 import { ShopComponent } from './Components/Pages/shop/shop.component';
+import { ShopBannerComponent } from './Components/Pages/shop/shop-banner/shop-banner.component';
+import { ProductsSectionComponent } from './Components/Pages/shop/products-section/products-section.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { ShopComponent } from './Components/Pages/shop/shop.component';
     NavbarComponent,
     FooterComponent,
     ShopComponent,
+    ShopBannerComponent,
+    ProductsSectionComponent
   ],
   imports: [
     BrowserModule,
