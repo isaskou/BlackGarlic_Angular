@@ -3,18 +3,17 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Product } from 'src/app/Models/Products/product';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-  private url: string = 'https://localhost:44322/api/Product';
+  private url = environment.apiUrl;
 
 
   constructor(
-    private _httpClient: HttpClient,
-    private _router : Router
-  ) { }
+    private _httpClient: HttpClient) { }
 
   GetAll(): Observable<Product[]>{
     return this._httpClient.get<Product[]>(this.url);

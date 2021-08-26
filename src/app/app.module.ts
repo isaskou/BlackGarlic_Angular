@@ -29,14 +29,14 @@ import { ProductsSectionComponent } from './Components/Pages/shop/products-secti
     FooterComponent,
     ShopComponent,
     ShopBannerComponent,
-    ProductsSectionComponent
+    ProductsSectionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule
-  ],
+  ], 
   providers: [],
   bootstrap: [AppComponent]
 })
