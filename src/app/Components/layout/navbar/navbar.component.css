@@ -2,8 +2,11 @@
 
 #mainNav {
     padding-top: 1rem;
+    position: sticky;
+    top:0px;
     padding-bottom: 1rem;
     background-color: #212529;
+    z-index: 9999;
   }
   #mainNav .navbar-toggler {
     padding: 0.75rem;
