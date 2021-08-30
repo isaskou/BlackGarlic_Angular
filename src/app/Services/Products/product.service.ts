@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ProductService {
-  private url = environment.apiUrl;
+  private url = environment.apiUrl+"Product/";
 
 
   constructor(
@@ -20,7 +20,7 @@ export class ProductService {
   }
 
   GetById(id: number): Observable<Product>{
-    return this._httpClient.get<Product>(this.url + '/' + id);
+    return this._httpClient.get<Product>(this.url + id);
   }
 
   Insert(p: Product): Observable<number>{
@@ -34,6 +34,10 @@ export class ProductService {
   Delete(id:number): Observable<Product>{
     return this._httpClient.delete<Product>(this.url+'/'+id)
   }
+
+  // GetByCategoryId(id: number): Observable<Product[]>{
+  //   return this._httpClient.get<Product[]>(this.url+"/category/"+id)
+  // }
 
 
 }
