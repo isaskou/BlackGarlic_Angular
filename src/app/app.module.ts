@@ -13,8 +13,13 @@ import { FooterComponent } from './Components/layout/footer/footer.component';
 import { HomeFeatureCardComponent } from './Components/Pages/home/home-feature-card/home-feature-card.component';
 import { HomeFeaturesComponent } from './Components/Pages/home/home-features/home-features.component';
 import { ShopComponent } from './Components/Pages/shop/shop.component';
-import { ShopBannerComponent } from './Components/Pages/shop/shop-banner/shop-banner.component';
 import { ProductsSectionComponent } from './Components/Pages/shop/products-section/products-section.component';
+import { DetailProductComponent } from './Components/Pages/shop/detailProduct/detailProduct.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ShopAccueilComponent } from './Components/Pages/shop/shop-accueil/shop-accueil.component';
+import { SAccueilTitleComponent } from './Components/Pages/shop/shop-accueil/s-accueil-title/s-accueil-title.component';
+import { SAccueilBannerComponent } from './Components/Pages/shop/shop-accueil/s-accueil-banner/s-accueil-banner.component';
+import { MainComponent } from './Components/layout/main/main.component';
 
 
 @NgModule({
@@ -28,14 +33,21 @@ import { ProductsSectionComponent } from './Components/Pages/shop/products-secti
     NavbarComponent,
     FooterComponent,
     ShopComponent,
-    ShopBannerComponent,
     ProductsSectionComponent,
+    DetailProductComponent,
+    ShopAccueilComponent,
+    SAccueilTitleComponent,
+    SAccueilBannerComponent,
+    MainComponent
+ 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ], 
   providers: [],
   bootstrap: [AppComponent]
