@@ -10,6 +10,8 @@
             <th>Actions</th>
         </tr>
     </thead>
+    
+    
     <tbody class="text-center">
         <tr *ngFor="let lp of listProduct">
             <td>{{lp.id}}</td>
@@ -20,8 +22,8 @@
             <td>{{lp.isDisabled}} </td>
             <td>{{lp.unitPrice}}</td>
             <td class="">
-                <a class="bi bi-search" routerLink="[lp.id]"></a>&nbsp;
-                <a class="bi bi-pencil-square" routerLink="['./edit/'+lp.id]"></a>&nbsp;
+                <a class="bi bi-search" [routerLink]="['/detailsProduct/'+lp.id]"></a>&nbsp;|&nbsp;
+                <a class="bi bi-pencil-square" [routerLink]="['./edit/'+lp.id]"></a>&nbsp;
                 <!-- <a class="bi bi-trash" (click)="delete(cl.contactId)"></a>&nbsp; -->
             </td>
         </tr>

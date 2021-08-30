@@ -4,11 +4,11 @@ import { Product } from 'src/app/Models/Products/product';
 import { ProductService } from 'src/app/Services/Products/product.service';
 
 @Component({
-  selector: 'app-products-section',
-  templateUrl: './products-section.component.html',
-  styleUrls: ['./products-section.component.css']
+  selector: 'app-shop-accueil',
+  templateUrl: './shop-accueil.component.html',
+  styleUrls: ['./shop-accueil.component.css']
 })
-export class ProductsSectionComponent implements OnInit {
+export class ShopAccueilComponent implements OnInit {
   listProduct: Product[] = [];
 
   constructor(
@@ -22,12 +22,5 @@ export class ProductsSectionComponent implements OnInit {
     );
   }
 
-  // private initProductList(): void{
-  //   this._productService.GetAll().subscribe(
-  //     (data:Product[])=> this.listProduct=data)
-    
-  // goToDetailsPage(id: number): void{
-  //   this._router.navigateByUrl('detailsProduct/' + id);
-  // }
 
 }
