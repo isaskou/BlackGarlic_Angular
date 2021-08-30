@@ -20,6 +20,8 @@ import { ShopAccueilComponent } from './Components/Pages/shop/shop-accueil/shop-
 import { SAccueilTitleComponent } from './Components/Pages/shop/shop-accueil/s-accueil-title/s-accueil-title.component';
 import { SAccueilBannerComponent } from './Components/Pages/shop/shop-accueil/s-accueil-banner/s-accueil-banner.component';
 import { MainComponent } from './Components/layout/main/main.component';
+import { SAccueilCardsComponent } from './Components/Pages/shop/shop-accueil/s-accueil-cards/s-accueil-cards.component';
+import { SAccueilFeatureComponent } from './Components/Pages/shop/shop-accueil/s-accueil-feature/s-accueil-feature.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { MainComponent } from './Components/layout/main/main.component';
     ShopAccueilComponent,
     SAccueilTitleComponent,
     SAccueilBannerComponent,
-    MainComponent
+    MainComponent,
+    SAccueilCardsComponent,
+    SAccueilFeatureComponent
  
   ],
   imports: [
