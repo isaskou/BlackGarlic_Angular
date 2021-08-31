@@ -21,6 +21,8 @@ import { SAccueilBannerComponent } from './Components/Pages/shop/shop-accueil/s-
 import { MainComponent } from './Components/layout/main/main.component';
 import { SAccueilFeatureComponent } from './Components/Pages/shop/shop-accueil/s-accueil-feature/s-accueil-feature.component';
 import { SAccueilFilterComponent } from './Components/Pages/shop/shop-accueil/s-accueil-filter/s-accueil-filter.component';
+import { DProductTitleComponent } from './Components/Pages/shop/detailProduct/d-product-title/d-product-title.component';
+import { DProductDetailComponent } from './Components/Pages/shop/detailProduct/d-product-detail/d-product-detail.component';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { SAccueilFilterComponent } from './Components/Pages/shop/shop-accueil/s-
     SAccueilBannerComponent,
     MainComponent,
     SAccueilFeatureComponent,
-    SAccueilFilterComponent
+    SAccueilFilterComponent,
+    DProductTitleComponent,
+    DProductDetailComponent
  
   ],
   imports: [
