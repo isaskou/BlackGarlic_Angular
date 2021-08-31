@@ -9,7 +9,7 @@ export interface IProduct {
     isDisabled: boolean;
     unitPrice: number;
     categoryId: number;
-    Category: CategoryProduct;
+    category: CategoryProduct;
     pictureUrl: string;
 
 }

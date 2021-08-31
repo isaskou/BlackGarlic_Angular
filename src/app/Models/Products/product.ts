@@ -10,7 +10,7 @@ export class Product implements IProduct {
     public isDisabled: boolean;
     public unitPrice: number;
     public categoryId: number;
-    public Category: CategoryProduct;
+    public category: CategoryProduct;
     public pictureUrl: string;
 
     constructor(id: number,
@@ -21,7 +21,7 @@ export class Product implements IProduct {
                 isDisabled: boolean,
                 unitPrice: number,
                 categoryId: number,
-                Category: CategoryProduct,
+                category: CategoryProduct,
                 pictureUrl: string) {
         this.id = id;
         this.name = name;
@@ -31,7 +31,7 @@ export class Product implements IProduct {
         this.isDisabled = isDisabled;
         this.unitPrice = unitPrice;
         this.categoryId = categoryId;
-        this.Category = Category;
+        this.category = category;
         this.pictureUrl = pictureUrl;
     }
 
