@@ -1,13 +1,7 @@
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-  <h1 class="h2">Produits</h1>
-</div>
+<app-d-product-title></app-d-product-title>
 
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-  <h1 class="h2">Détail Produit</h1>
-</div>
-
-
-<ng-container *ngIf="currentProduct;then loaded;else notloaded;"></ng-container>
+<app-d-product-detail></app-d-product-detail>
+<!-- <ng-container *ngIf="currentProduct;then loaded;else notloaded;"></ng-container>
 <ng-template #notloaded>Chargement en cours...</ng-template>
 <ng-template #loaded>
 
@@ -19,4 +13,4 @@
       Name : {{currentProduct.name}}<br />
       description : {{currentProduct.description}}<br />
     </div>
-  </div>
+  </div> -->

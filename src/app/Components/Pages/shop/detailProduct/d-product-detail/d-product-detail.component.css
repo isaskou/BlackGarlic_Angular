@@ -1,0 +1,14 @@
+.image {
+    background-size: cover;
+    width: 600px;
+    height: 700px;
+    }
+    
+    .image img {
+    display: none;
+    }
+
+    .img-fluid{
+        max-width: 100%;
+        max-height: auto;
+    }
