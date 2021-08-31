@@ -17,7 +17,7 @@ export class SAccueilFeatureComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this._productService.GetAll();
+    this._productService.GetAll().subscribe(x=>this.listProduct=x);
   }
 
 }

@@ -1,22 +1,28 @@
-<p>app-s-accueil-feature works !</p>
-<div class="container" >
-    <div class="row" >
-        <div class="col" >
+<div class="container">
+    <div class="row">
+        <div class="col">
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4" *ngFor="let lp of listProduct" >
-                    
-                    <div class="card h-100" >
-                        <!-- <a [routerLink]="['/detailsProduct/'+lp.id]"> -->
-                        <div class="card-body">
-                            <h3 class="card-title text-center text-uppercase">
+                <div class="col-lg-4 col-md-6 mb-4" *ngFor="let lp of listProduct">
+
+                    <div class="card mb-3">
+                        <a [routerLink]="['/detailsProduct/'+lp.id]" title="{{lp.name}}">
+                            <h3 class="card-header text-center text-uppercase">
                                 {{lp.name}}
                             </h3>
-                            <h4 class="text-center">{{lp.unitPrice}} €</h4>
-                            <p class="card-text">{{lp.description}}</p>
-                            <!-- <img [src]="lp.pictureUrl" class=" img-card img-fluid mx-auto d-block" /> -->
-                        </div>
-
-                        <!-- </a> -->
+                            <div class="card-body">
+                                <div class="image" style="background-image:url({{lp.pictureUrl}})"><img
+                                        class="img-fluid" [src]="lp.pictureUrl" alt="{{lp.name}}" /></div>
+                                <!-- <img [src]="lp.pictureUrl" class=" img-card img-fluid mx-auto d-block" /></div> -->
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center">
+                                    <p>{{lp.description}}</p>
+                                    <p>{{lp.unitPrice}} €</p>
+                                    <a [routerLink]="['/detailsProduct/'+lp.id]" class="btn btn-primary"
+                                        title="{{lp.name}}">En savoir plus</a>
+                                </li>
+                            </ul>
+                        </a>
                     </div>
                 </div>
             </div>

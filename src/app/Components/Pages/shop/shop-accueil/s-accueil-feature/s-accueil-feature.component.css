@@ -1,21 +1,28 @@
-/* .btn-outline-info {
-    border-color: white !important;
-}
+.image {
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    }
+    
+    .image img {
+    display: none;
+    }
 
-img {
-    max-width: 200px;
-    max-height: 200px;
-}
+    .img-fluid{
+        max-width: 100%;
+        max-height: auto;
+    }
 
-.filterActive {
-    background-color: #17a2b8;
-    color:white;
-}
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    a:hover{
+        color: rgb(145, 76, 16);
+    }
 
-a {
-    cursor: pointer;
-} */
-
-.container{
-    color: white;
-}
+    .btn-primary:hover {
+        color: #fff;
+        background-color: rgb(145, 76, 16);
+        border-color: rgb(145, 76, 16);
+      }
