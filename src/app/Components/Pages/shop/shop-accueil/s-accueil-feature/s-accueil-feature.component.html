@@ -5,7 +5,7 @@
                 <div class="col-lg-4 col-md-6 mb-4" *ngFor="let lp of listProduct">
 
                     <div class="card mb-3">
-                        <a [routerLink]="['/detailsProduct/'+lp.id]" title="{{lp.name}}">
+                        <a [routerLink]="[lp.id]" title="{{lp.name}}">
                             <h3 class="card-header text-center text-uppercase">
                                 {{lp.name}}
                             </h3>

@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CategoryProduct } from 'src/app/Models/Products/category-product';
 import { Product } from 'src/app/Models/Products/product';
-import { ProductDetail } from 'src/app/Models/Products/product-detail';
-import { CategoryProductService } from 'src/app/Services/Products/category-product.service';
 import { ProductService } from 'src/app/Services/Products/product.service';
 
 @Component({
