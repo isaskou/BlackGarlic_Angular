@@ -18,7 +18,7 @@
                                 <li class="list-group-item text-center">
                                     <p>{{lp.description}}</p>
                                     <p>{{lp.unitPrice}} €</p>
-                                    <a [routerLink]="['/detailsProduct/'+lp.id]" class="btn btn-primary"
+                                    <a [routerLink]="[lp.id]" class="btn btn-primary"
                                         title="{{lp.name}}">En savoir plus</a>
                                 </li>
                             </ul>
