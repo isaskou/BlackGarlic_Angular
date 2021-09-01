@@ -23,6 +23,11 @@ import { SAccueilFeatureComponent } from './Components/Pages/shop/shop-accueil/s
 import { SAccueilFilterComponent } from './Components/Pages/shop/shop-accueil/s-accueil-filter/s-accueil-filter.component';
 import { DProductTitleComponent } from './Components/Pages/shop/detailProduct/d-product-title/d-product-title.component';
 import { DProductDetailComponent } from './Components/Pages/shop/detailProduct/d-product-detail/d-product-detail.component';
+import { JwtModule } from '@auth0/angular-jwt';
+
+export function tokenGetter() {
+  return sessionStorage.getItem("jwt");
+}
 
 
 @NgModule({
@@ -53,8 +58,15 @@ import { DProductDetailComponent } from './Components/Pages/shop/detailProduct/d
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
-  ], 
+    ReactiveFormsModule,
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: tokenGetter,
+        allowedDomains: ["localhost:4200"],
+        disallowedRoutes:[]
+      }
+    })
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
