@@ -1,29 +1,33 @@
-import { CategoryProductService } from "../Services/Products/category-product.service";
-import { CategoryProduct } from "./Products/category-product";
+import { CategoryProduct } from "./category-product";
 
-export class ProductDetails {
-    id: number;
+export class ProductToInsert {
     productName: string;
-    unitPrice: number;
     description: string;
+    utilisation: string;
+    ingredients: string;
+    unitPrice: number;
     category: CategoryProduct;
     pictureUrl: string;
 
 
   constructor(
-    id: number, 
     productName: string, 
-    unitPrice: number, 
     description: string, 
+    utilisation: string, 
+    ingredients: string, 
+    unitPrice: number, 
     category: CategoryProduct, 
     pictureUrl: string
 ) {
-    this.id = id
     this.productName = productName
-    this.unitPrice = unitPrice
     this.description = description
+    this.utilisation = utilisation
+    this.ingredients = ingredients
+    this.unitPrice = unitPrice
     this.category = category
     this.pictureUrl = pictureUrl
   }
 
+
+    
 }

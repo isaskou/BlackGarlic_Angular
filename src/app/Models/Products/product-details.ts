@@ -1,33 +1,28 @@
-import { CategoryProduct } from "./Products/category-product";
+import { CategoryProduct } from "./category-product";
 
-export class ProductToInsert {
+export class ProductDetails {
+    id: number;
     productName: string;
-    description: string;
-    utilisation: string;
-    ingredients: string;
     unitPrice: number;
+    description: string;
     category: CategoryProduct;
     pictureUrl: string;
 
 
   constructor(
+    id: number, 
     productName: string, 
-    description: string, 
-    utilisation: string, 
-    ingredients: string, 
     unitPrice: number, 
+    description: string, 
     category: CategoryProduct, 
     pictureUrl: string
 ) {
+    this.id = id
     this.productName = productName
-    this.description = description
-    this.utilisation = utilisation
-    this.ingredients = ingredients
     this.unitPrice = unitPrice
+    this.description = description
     this.category = category
     this.pictureUrl = pictureUrl
   }
 
-
-    
 }
