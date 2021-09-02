@@ -28,6 +28,7 @@ import { AboutComponent } from './Components/Pages/about/about.component';
 import { BlogComponent } from './Components/Pages/blog/blog.component';
 import { ContactComponent } from './Components/Pages/contact/contact.component';
 import { CompteComponent } from './Components/Pages/compte/compte.component';
+import { PanierComponent } from './Components/Caddie/panier/panier.component';
 
 export function tokenGetter() {
   return sessionStorage.getItem("jwt");
@@ -57,7 +58,8 @@ export function tokenGetter() {
     AboutComponent,
     BlogComponent,
     ContactComponent,
-    CompteComponent
+    CompteComponent,
+    PanierComponent
  
   ],
   imports: [

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/app/Models/Products/product';
 import { ProductService } from 'src/app/Services/Products/product.service';
@@ -14,7 +15,8 @@ export class DProductDetailComponent implements OnInit {
   
   constructor(
     private _productService: ProductService,
-    private _activatedRoute : ActivatedRoute
+    private _activatedRoute: ActivatedRoute,
+    private _formBuilder:FormBuilder
   ) {
    }
   
