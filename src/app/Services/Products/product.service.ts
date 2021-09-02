@@ -32,12 +32,12 @@ export class ProductService {
   }
 
   Delete(id:number): Observable<Product>{
-    return this._httpClient.delete<Product>(this.url+'/'+id)
+    return this._httpClient.delete<Product>(this.url+id)
   }
 
-  // GetByCategoryId(id: number): Observable<Product[]>{
-  //   return this._httpClient.get<Product[]>(this.url+"/category/"+id)
-  // }
+  GetByCategoryId(id: number): Observable<Product[]>{
+    return this._httpClient.get<Product[]>(this.url+"api/Product/category/"+id)
+  }
 
 
 }
