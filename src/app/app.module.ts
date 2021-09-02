@@ -24,6 +24,10 @@ import { SAccueilFilterComponent } from './Components/Pages/shop/shop-accueil/s-
 import { DProductTitleComponent } from './Components/Pages/shop/detailProduct/d-product-title/d-product-title.component';
 import { DProductDetailComponent } from './Components/Pages/shop/detailProduct/d-product-detail/d-product-detail.component';
 import { JwtModule } from '@auth0/angular-jwt';
+import { AboutComponent } from './Components/Pages/about/about.component';
+import { BlogComponent } from './Components/Pages/blog/blog.component';
+import { ContactComponent } from './Components/Pages/contact/contact.component';
+import { CompteComponent } from './Components/Pages/compte/compte.component';
 
 export function tokenGetter() {
   return sessionStorage.getItem("jwt");
@@ -49,7 +53,11 @@ export function tokenGetter() {
     SAccueilFeatureComponent,
     SAccueilFilterComponent,
     DProductTitleComponent,
-    DProductDetailComponent
+    DProductDetailComponent,
+    AboutComponent,
+    BlogComponent,
+    ContactComponent,
+    CompteComponent
  
   ],
   imports: [

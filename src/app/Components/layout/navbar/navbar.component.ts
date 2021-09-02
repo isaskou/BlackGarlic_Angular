@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
     {name:'Shop', link:'./shop'},
     {name:'Blog', link:'./blog'},
     { name: 'Contact', link: './contact' },
-    {name : 'Mon Compte', link: './mon-compte'}
+    {name : 'Compte', link: './compte'}
 
   ]
 
