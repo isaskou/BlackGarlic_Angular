@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/Pages/home/home.component';
@@ -14,7 +15,6 @@ import { HomeFeatureCardComponent } from './Components/Pages/home/home-feature-c
 import { HomeFeaturesComponent } from './Components/Pages/home/home-features/home-features.component';
 import { ShopComponent } from './Components/Pages/shop/shop.component';
 import { DetailProductComponent } from './Components/Pages/shop/detailProduct/detailProduct.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShopAccueilComponent } from './Components/Pages/shop/shop-accueil/shop-accueil.component';
 import { SAccueilTitleComponent } from './Components/Pages/shop/shop-accueil/s-accueil-title/s-accueil-title.component';
 import { SAccueilBannerComponent } from './Components/Pages/shop/shop-accueil/s-accueil-banner/s-accueil-banner.component';
@@ -29,6 +29,7 @@ import { BlogComponent } from './Components/Pages/blog/blog.component';
 import { ContactComponent } from './Components/Pages/contact/contact.component';
 import { PanierComponent } from './Components/Caddie/panier/panier.component';
 import { AccountComponent } from './Components/Pages/account/account.component';
+import { TokenService } from './Services/Tools/token.service';
 
 export function tokenGetter() {
   return sessionStorage.getItem("jwt");
@@ -77,7 +78,11 @@ export function tokenGetter() {
       }
     })
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: TokenService,
+    multi:true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
