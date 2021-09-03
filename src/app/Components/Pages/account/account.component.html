@@ -1,5 +1,4 @@
-<p>account works ! </p>
-<!-- 
+
 <div class="container login-container">
     <div class="row">
         <div class="col-md-6 login-form-1">
@@ -39,12 +38,12 @@
             </form>
         </div>
         <!--======================================================================================================-->
-        <!-- <div class="col-md-6 login-form-2">
+        <div class="col-md-6 login-form-2">
             <h3>Inscription</h3><form [formGroup]="registerForm" (ngSubmit)="OnRegisterSubmit(registerForm.value)">
               <div class="form-group">
                   <input type="text" class="form-control" [formControl]="registerForm.controls['emailRegister']" placeholder="Adresse email" value="" />
                    <!-- Here goes validations errors messages -->
-                  <!-- <div *ngIf="registerForm.controls['emailRegister'].invalid && (registerForm.controls['emailRegister'].dirty || registerForm.controls['emailRegister'].touched)">                    
+                  <div *ngIf="registerForm.controls['emailRegister'].invalid && (registerForm.controls['emailRegister'].dirty || registerForm.controls['emailRegister'].touched)">                    
                       <div *ngIf="registerForm.controls['emailRegister'].errors?.minlength" class="alert alert-danger">
                           L'email doit comprendre au minimum 3 caractères.
                       </div>  
@@ -64,9 +63,9 @@
               </div>
               
               <div class="form-group">
-                  <input type="password" class="form-control" [formControl]="registerForm.controls['passwordRegister']" placeholder="Mot de passe" value="" /> -->
+                  <input type="password" class="form-control" [formControl]="registerForm.controls['passwordRegister']" placeholder="Mot de passe" value="" />
                    <!-- Here goes validations errors messages -->
-                  <!-- <div *ngIf="registerForm.controls['passwordRegister'].invalid && (registerForm.controls['passwordRegister'].dirty || registerForm.controls['passwordRegister'].touched)">
+                  <div *ngIf="registerForm.controls['passwordRegister'].invalid && (registerForm.controls['passwordRegister'].dirty || registerForm.controls['passwordRegister'].touched)">
                       <div *ngIf="registerForm.controls['passwordRegister'].errors?.minlength" class="alert alert-danger">
                           Le mot de passe doit comprendre au minimum 3 caractères.
                       </div>  
@@ -79,9 +78,9 @@
                   </div>
               </div>
               <div class="form-group">
-                  <input type="password" class="form-control" [formControl]="registerForm.controls['confPwdRegister']" placeholder="Confirmation du mot de passe" value="" /> -->
+                  <input type="password" class="form-control" [formControl]="registerForm.controls['confPwdRegister']" placeholder="Confirmation du mot de passe" value="" />
                    <!-- Here goes validations errors messages -->
-                  <!-- <div *ngIf="registerForm.controls['confPwdRegister'].invalid && (registerForm.controls['confPwdRegister'].dirty || registerForm.controls['confPwdRegister'].touched)">
+                  <div *ngIf="registerForm.controls['confPwdRegister'].invalid && (registerForm.controls['confPwdRegister'].dirty || registerForm.controls['confPwdRegister'].touched)">
                       <div *ngIf="registerForm.controls['confPwdRegister'].errors?.minlength" class="alert alert-danger">
                           La confirmation du mot de passe doit comprendre au minimum 3 caractères.
                       </div>  
@@ -102,4 +101,5 @@
           </form>
         </div>
     </div>
-  </div> -->
+  </div>
+  
