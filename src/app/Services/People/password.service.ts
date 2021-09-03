@@ -1,9 +1,22 @@
 import { Injectable } from '@angular/core';
+import { FormGroup, ValidationErrors, ValidatorFn } from '@angular/forms';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class PasswordService {
+export const PasswordValidatorMaxLength: ValidatorFn = (control: FormGroup): ValidationErrors | null => {
+  if(control.value.length == 0) return { 'maxLength' : false}
+  return  control.dirty && control.value.length > 50 ? { 'maxLength' : true} : null 
+};
 
-  constructor() { }
-}
+export const PasswordValidatorMinLength: ValidatorFn = (control: FormGroup): ValidationErrors => {
+  if(control.value.length == 0) return { 'minLength' : false}
+  return  control.dirty && control.value.length < 3 ? { 'minLength' : true} : null 
+};
+
+export const PasswordUpdateValidatorMinLength: ValidatorFn = (control: FormGroup): ValidationErrors => {
+  if(control.value.length == 0) return { 'minLength' : false}
+  return  control.dirty && control.value.length < 3 && control.value.length != 0 ? { 'minLength' : true} : null 
+};
+
+export const PasswordUpdateValidatorMaxLength: ValidatorFn = (control: FormGroup): ValidationErrors | null => {
+  if(control.value.length == 0) return { 'maxLength' : false}
+  return  control.dirty && control.value.length > 50 && control.value.length != 0 ? { 'maxLength' : true} : null 
+};
