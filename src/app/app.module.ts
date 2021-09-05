@@ -4,6 +4,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TokenService } from './Services/Tools/token.service';
+import { JwtModule } from '@auth0/angular-jwt';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/Pages/home/home.component';
@@ -23,13 +26,11 @@ import { SAccueilFeatureComponent } from './Components/Pages/shop/shop-accueil/s
 import { SAccueilFilterComponent } from './Components/Pages/shop/shop-accueil/s-accueil-filter/s-accueil-filter.component';
 import { DProductTitleComponent } from './Components/Pages/shop/detailProduct/d-product-title/d-product-title.component';
 import { DProductDetailComponent } from './Components/Pages/shop/detailProduct/d-product-detail/d-product-detail.component';
-import { JwtModule } from '@auth0/angular-jwt';
 import { AboutComponent } from './Components/Pages/about/about.component';
 import { BlogComponent } from './Components/Pages/blog/blog.component';
 import { ContactComponent } from './Components/Pages/contact/contact.component';
 import { PanierComponent } from './Components/Caddie/panier/panier.component';
 import { AccountComponent } from './Components/Pages/account/account.component';
-import { TokenService } from './Services/Tools/token.service';
 
 export function tokenGetter() {
   return sessionStorage.getItem("jwt");
