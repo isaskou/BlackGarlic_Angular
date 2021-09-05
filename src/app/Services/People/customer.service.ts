@@ -12,7 +12,7 @@ import { SessionService } from '../Tools/session.service';
 })
 export class CustomerService {
 
-  private url = environment.apiUrl + 'Customer/api/Customer/';
+  private url = environment.apiUrl + 'Customer/';
 
   constructor(
     private _http: HttpClient,

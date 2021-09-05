@@ -52,7 +52,7 @@ export class AccountComponent implements OnInit {
     this.loginForm.markAllAsTouched();
     if (this.loginForm.valid) {
       const credentials = {
-        'emailAdress': form["emailLog"],
+        'email': form["emailLog"],
         'password':form["passwordLog"]
       }
       this._loginService.logCustomer(credentials).subscribe(response => {
@@ -75,7 +75,7 @@ export class AccountComponent implements OnInit {
         )
       ).subscribe(dt => {
         const credentials = {
-          'emailAdress': form["emailRegister"],
+          'email': form["emailRegister"],
           'password':form["passwordRegister"]
         }
         this._loginService.logCustomer(credentials).subscribe(response => {
