@@ -19,7 +19,7 @@ export class ProductService {
     return this._httpClient.get<Product[]>(this.url);
   }
 
-  GetById(id: number): Observable<Product>{
+  GetById(id: string): Observable<Product>{
     return this._httpClient.get<Product>(this.url + id);
   }
 
