@@ -2,9 +2,14 @@ import { CategoryProduct } from "./category-product";
 
 export class ProductDetails {
     id: number;
-    productName: string;
-    unitPrice: number;
-    description: string;
+    name: string;
+  description: string;
+  utilisation: string;
+   ingredients: string;
+   isDisabled: boolean;
+
+  unitPrice: number;
+  categoryId: number;
     category: CategoryProduct;
     pictureUrl: string;
 
@@ -18,7 +23,7 @@ export class ProductDetails {
     pictureUrl: string
 ) {
     this.id = id
-    this.productName = productName
+    this.name = productName
     this.unitPrice = unitPrice
     this.description = description
     this.category = category

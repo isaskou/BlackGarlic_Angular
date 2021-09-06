@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Cart } from 'src/app/Models/Caddie/cart';
 import { Product } from 'src/app/Models/Products/product';
 import { ProductDetails } from 'src/app/Models/Products/product-details';
@@ -22,7 +22,8 @@ export class DProductDetailComponent implements OnInit {
     private _activatedRoute: ActivatedRoute,
     private _formBuilder: FormBuilder,
     private _sessionService: SessionService,
-    private _productMapper:ProductMapperService
+    private _productMapper: ProductMapperService,
+    private _router:Router
     
   ) {
   }
@@ -30,7 +31,7 @@ export class DProductDetailComponent implements OnInit {
   productId: string;
   productDetail: ProductDetails;
   qtForm: FormGroup;
-  successAddesProductCart: boolean = false;
+  successAddedProductCart: boolean = false;
   
 
 
@@ -55,12 +56,15 @@ export class DProductDetailComponent implements OnInit {
     this._sessionService.StoreTempCart(new Cart(
       product.id, product.name, product.isDisabled, product.unitPrice, qt["qt"]
     ));
+    this.successAddedProductCart = true;
+    console.log(this.productDetail.name + qt);
+    // this._router.navigateByUrl('main/cart')
+    
   }
+
 
   UserIsConnected(): boolean{
     return this._sessionService.recoverRoleUser()=="Client"
   }
-  
-  
 
 }
