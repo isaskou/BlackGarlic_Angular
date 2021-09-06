@@ -1,0 +1,41 @@
+  <div class="col-sm-6 col-sm-offset-3">
+      <h3>Se connecter</h3>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+              Email : <input type="text" class="form-control" formControlName="email">
+              <div *ngIf="loginForm.controls['emailLog'].dirty || loginForm.controls['emailLog'].touched">pas de mail...</div>
+              <!-- <div *ngIf="loginForm.controls['emailLog'].invalid && (loginForm.controls['emailLog'].dirty || loginForm.controls['emailLog'].touched)"> -->
+                <!-- <div *ngIf="loginForm.controls['emailLog'].errors?.minlength" class="alert alert-danger"> -->
+                    <!-- L'email doit comprendre au minimum 3 caractères. -->
+                <!-- </div>   -->
+          </div>
+          <div class="form-group">
+              Mot de passe : <input type="password" class="form-control" formControlName="password">
+          </div>
+          <button class="btn btn-primary" type="submit" [disabled]="loginForm.invalid">Connexion</button>
+      </form>
+      <p class="text-danger">{{errorMessage}}</p>
+  </div>
+
+<!-- <div class="card-row">
+    <div class="card-col">
+                <h3>Se connecter</h3>
+                <form [formGroup]="fg" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <p>Email : </p>
+                        <input nbInput fullWidth type="text" class="form-control" formControlName="email">
+                    </div>
+                    <div class="form-group">
+                        <p>Mot de passe : </p>
+                        <input nbInput fullWidth type="password" class="form-control" formControlName="password">
+                    </div>
+                    <br>
+                    <button class="logButon" nbButton type="submit" [disabled]="fg.invalid">Connexion</button>
+                </form>
+                <p class="text-danger">{{errorMessage}}</p>
+    </div>
+</div> -->
+
+
+
+

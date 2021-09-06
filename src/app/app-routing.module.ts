@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { PanierComponent } from './Components/Caddie/panier/panier.component';
 import { MainComponent } from './Components/layout/main/main.component';
 import { AboutComponent } from './Components/Pages/about/about.component';
-import { AccountComponent } from './Components/Pages/account/account.component';
+import { DemoGeoffroyComponent } from './Components/Pages/demo-geoffroy/demo-geoffroy.component';
+// import { AccountComponent } from './Components/Pages/account/account.component';
 import { BlogComponent } from './Components/Pages/blog/blog.component';
 import { ContactComponent } from './Components/Pages/contact/contact.component';
 import { HomeComponent } from './Components/Pages/home/home.component';
@@ -22,8 +23,8 @@ const routes: Routes = [
       { path: 'shop/:id', component: DetailProductComponent },
       { path: 'blog', component: BlogComponent },
       { path: 'contact', component: ContactComponent },
-      { path: 'account', component: AccountComponent },
-      {path:'cart', component:PanierComponent}
+      { path: 'cart', component: PanierComponent },
+      {path:'account', component:DemoGeoffroyComponent}
       
     ]
   }

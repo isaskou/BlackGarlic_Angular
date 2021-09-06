@@ -59,6 +59,7 @@ export class SessionService {
       tmpCart = [];
     }
     tmpCart.push(product);
+    console.log(product.productName);
     sessionStorage.setItem("tmpcart", JSON.stringify(tmpCart));
   }
 
